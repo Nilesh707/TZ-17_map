@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_marginTop="5dp"
+    app:cardBackgroundColor="@color/accentcolor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See how big Technozion has always been. And as it has always been, it's going to be bigger this time as well. With more initiatives such as Pre-Technozion Workshops, Hackathons, more exciting competitions and more fun."
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"/>
+
+</android.support.v7.widget.CardView>

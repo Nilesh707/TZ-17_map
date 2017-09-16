@@ -1,0 +1,42 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.technozion.tz_17.Events"
+    >
+<include
+    layout="@layout/app_bar"
+    android:id="@+id/app_toolbar"
+    />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.technozion.tz_17.Login"
+    android:fitsSystemWindows="true"
+    android:layout_below="@+id/app_toolbar">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/theme_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

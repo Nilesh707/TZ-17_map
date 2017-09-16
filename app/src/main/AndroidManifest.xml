@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.technozion.tz_17">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/tz"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAYgHuz5MBk9coyBhSX1R6EJahHjJWE4b8" />
+
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/tz" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/accentcolor" />
+
+        <service android:name=".firebase.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.InstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TZ_main"
+            android:label="@string/title_activity_tz_main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Notify"
+            android:label="@string/title_activity_notify"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.technozion.tz_17.TZ_main" />
+        </activity>
+        <activity
+            android:name=".Maps.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Events"
+            android:label="@string/title_activity_events"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Event_main"
+            android:label="@string/title_activity_event_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:label="Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventMap"
+            android:label="Location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateProfile"
+            android:label="Update Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Team"
+            android:label="App Development Team"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".Event_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_event_9"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventRegister"
+            android:label="Register For Event"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Theme"
+            android:label="About Technozion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebPayment"
+            android:label="Payment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentPayu"
+            android:label="@string/title_activity_theme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".popup_description"
+            android:label="Event Description"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Popup_qr"
+            android:label="QR Image"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Referral"
+            android:label="Referral Program"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".enlargeQR"
+            android:label="QR Code"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".FoodStall_Activity"
+            android:label="Food Stalls"
+            android:screenOrientation="portrait"></activity>
+        android:screenOrientation="portrait" />
+        <activity
+            android:name=".Videos"
+            android:label="@string/title_activity_videos"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".VideoPage"
+            android:label="@string/title_activity_video_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RecentUpdates"
+            android:label="@string/title_activity_recent_updates"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".hostels.hostel"></activity>
+    </application>
+
+</manifest>

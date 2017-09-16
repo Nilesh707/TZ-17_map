@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="2dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff000000">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_placeholder"
+                android:id="@+id/card_icon" />
+
+
+            <RelativeLayout
+                android:id="@+id/aboveImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99111111">
+
+                <TextView
+                    android:id="@+id/card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Online Events"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

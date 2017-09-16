@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="2dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_placeholder"
+                android:id="@+id/card_icon" />
+
+
+            <RelativeLayout
+                android:id="@+id/aboveImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingBottom="8dp"
+                android:background="#99111111">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_loaction"
+                    android:text="Location"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignBottom="@+id/event_cost"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight = "true"
+                    />
+
+                <TextView
+                    android:id="@+id/card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    fontPath="fonts/Montserrat-Bold.ttf"
+                    android:text="Factory by Sutra"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <!--<ImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:src="@drawable/image_border"-->
+                    <!--android:id="@+id/logo"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginTop="7dp"-->
+                    <!--/>-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_cost"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:text="Cost of Event"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+                    <!--android:layout_toEndOf="@+id/logo"-->
+                    <!--android:layout_toRightOf="@+id/logo"-->
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day 0"
+                    android:id="@+id/event_day"
+                    android:textColor="#ffffff"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

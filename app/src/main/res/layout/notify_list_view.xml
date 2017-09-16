@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:id="@+id/notify_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="4sp"
+        android:src="@drawable/event"/>
+
+    <TextView
+        android:id="@+id/notify_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/notify_image"
+        android:layout_toRightOf="@+id/notify_image"
+        android:text="symbol here"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/notify_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/notify_title"
+        android:layout_marginLeft="20sp"
+        android:text="price here"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/notify_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notify_title"
+        android:layout_toEndOf="@+id/notify_image"
+        android:layout_toRightOf="@+id/notify_image"
+        android:text="timestamp here"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</RelativeLayout>

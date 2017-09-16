@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "444127462243",
+    "firebase_url": "https://tz17-18c33.firebaseio.com",
+    "project_id": "tz17-18c33",
+    "storage_bucket": "tz17-18c33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444127462243:android:049aa4705b4f3251",
+        "android_client_info": {
+          "package_name": "com.technozion.tz_17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444127462243-j7a5460i5qdn93hr1g1i8h5jqmaj5icf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC11p_k03ZFYYQx68Gj5v8w7tvxdA9fJG4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

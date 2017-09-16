@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/imageView"
+        android:layout_height="150dp"
+        android:background="#ffffff"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="false" />
+
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:id="@+id/tv_stall_name"
+        android:textSize="50dp"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:textStyle="normal|bold"
+        android:fontFamily="cursive"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_stall_time"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="6:00 pm-10:00 pm"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:textSize="16sp"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/food_stall_time"
+        android:id="@+id/imageView2"
+        android:layout_height="25dp"
+        android:layout_below="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/food_stall_location"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tv_stall_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_below="@+id/tv_stall_time"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorMultiSelectHighlight"
+        android:id="@+id/toolbar2"
+        android:layout_below="@+id/tv_stall_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stall_location"
+        android:id="@+id/img_bt_stall_loc"
+        android:background="@drawable/abc_btn_borderless_material"
+        android:layout_alignBottom="@+id/toolbar2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="MENU"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginBottom="14dp"
+        android:layout_alignBottom="@+id/toolbar2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"/>
+
+    <ImageButton
+        android:src="@drawable/stall_menu_left"
+        android:id="@+id/img_bt_stall_menu"
+        android:background="@drawable/abc_btn_borderless_material"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/menu"
+        android:layout_toRightOf="@+id/menu"
+        android:layout_toEndOf="@+id/menu"
+        android:layout_width="20dp" />
+
+    <TextView
+        android:text="Hello there"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stall_menu"
+        android:layout_below="@+id/toolbar2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffc266"
+        android:fontFamily="cursive"
+        android:textSize="18sp"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:visibility="gone" />
+
+</RelativeLayout>
